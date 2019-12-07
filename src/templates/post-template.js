@@ -58,7 +58,7 @@ export const query = graphql`
         }
       }
       images {
-        fluid {
+        fluid (maxWidth: 800) {
           ...GatsbyContentfulFluid_tracedSVG
         }
       }
