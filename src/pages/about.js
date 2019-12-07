@@ -45,13 +45,13 @@ const About = () => {
           <li>
             <del>Explore gatsby-background-image plugin (package added)</del>
           </li>
-          <li>Stand up on Nelify</li>
-          <li>Sort out on Git, CD and test webhooks</li>
+          <li><del>Stand up on Nelify</del></li>
+          <li><del>Sort out on Git, CD and test webhooks</del></li>
           <li>Add pagination on blogs</li>
           <li>Complete SEO and PWA config</li>
           <li>Improve styling (crappy blog links, card footers etc)</li>
           <li>Test with Lighthouse</li>
-          <li>Add GA and commenting</li>
+          <li>Add GA and commenting?</li>
           <li>updating Starter</li>
         </ul>
       </div>
