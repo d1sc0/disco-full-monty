@@ -33,7 +33,7 @@ const PostTemplate = ({ data }) => {
           </div>
           <div className="col-sm-6">
             <Image
-              fixed={postImage}
+              fluid={postImage}
               objectFit="cover"
               className="mb-0 img-fluid post-img-main rounded"
               alt=""

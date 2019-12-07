@@ -12,7 +12,7 @@ const singleCard = ({ post }) => {
       <div className="col-md-4 card-group">
         <Card className="card mb-4 box-shadow">
           <Image
-            fixed={postImage}
+            fluid={postImage}
             objectFit="cover"
             className="mb-0 img-fluid card-img-top"
             alt=""

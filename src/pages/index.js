@@ -52,7 +52,7 @@ export const data = graphql`
           }
           images {
             fluid {
-              src
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -65,7 +65,7 @@ export const data = graphql`
         fluid(
           duotone: { highlight: "#3b55ce", shadow: "#35212a", opacity: 80 }
         ) {
-          src
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
