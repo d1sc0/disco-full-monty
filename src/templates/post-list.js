@@ -49,8 +49,8 @@ export const data = graphql`
             postExcerpt
           }
           images {
-            fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+            fluid(maxWidth: 400) {
+              ...GatsbyContentfulFluid
             }
           }
         }
