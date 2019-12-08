@@ -62,8 +62,8 @@ export const query = graphql`
         }
       }
       images {
-        fluid(maxWidth: 800) {
-          ...GatsbyContentfulFluid_tracedSVG
+        fluid(maxWidth: 400) {
+          ...GatsbyContentfulFluid
         }
       }
     }
