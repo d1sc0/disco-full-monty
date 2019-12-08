@@ -17,13 +17,21 @@ const BlogPage = ({ data, pageContext }) => {
       <CardSet postData={data.posts.edges} colSetup="col-md-6" />
       <div className="container text-center">
         {!isFirst && (
-          <Link to={`/blog/${prevPage}`} rel="prev" classname="prev-link">
-            ← Previous Page
+          <Link
+            to={`/blog/${prevPage}`}
+            className="btn btn-info m-2 navBtn"
+            rel="prev"
+          >
+            Previous Page
           </Link>
         )}
         {!isLast && (
-          <Link to={`/blog/${nextPage}`} rel="next" classname="next-link">
-            Next Page →
+          <Link
+            to={`/blog/${nextPage}`}
+            className="btn btn-info m-2 navBtn"
+            rel="next"
+          >
+            Next Page
           </Link>
         )}
       </div>

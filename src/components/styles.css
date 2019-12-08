@@ -63,13 +63,6 @@ footer {
   border-radius: 0.25rem !important;
 }
 
-.prev-link {
-  margin-right: 2rem;
-}
-.next-link {
-  margin-left: 2rem;
-}
-
 .card-footer {
   background-color: #ffffff;
   border-top: none;
@@ -86,4 +79,8 @@ a:hover {
 
 a:active {
   text-decoration: underline;
+}
+
+.navBtn {
+  width: 20rem;
 }

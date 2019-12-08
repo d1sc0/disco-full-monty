@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
       />
       <CardSet postData={data.posts.edges} colSetup="col-md-4" />
       <div className="container text-center">
-        <Link to="/blog/" className="btn btn-info my-2 w-50">
+        <Link to="/blog/" className="btn btn-info my-2 navBtn">
           Read more posts...
         </Link>
       </div>
