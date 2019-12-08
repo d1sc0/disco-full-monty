@@ -62,9 +62,7 @@ export const data = graphql`
       relativePath: { eq: "jamie-street-MoDcnVRN5JU-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(
-          duotone: { highlight: "#3b55ce", shadow: "#35212a", opacity: 80 }
-        ) {
+        fluid(duotone: { highlight: "#282828", shadow: "#080808" }) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -27,8 +27,8 @@ const About = () => {
         <h1>About The Full Monty</h1>
         <Image
           fluid={data.fluid1.childImageSharp.fluid}
-          className="about-image"
-          alt="spaceman"
+          className="about-image rounded"
+          alt="dog reading"
         />
         <p className="lead my-4">
           I'm Monty the Dog! Welcome to my blog. It's not a real blog. It's just
