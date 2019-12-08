@@ -55,9 +55,12 @@ const About = () => {
             <del>Add pagination on blogs></del>
           </li>
           <li>
-            Improve styling (markdown parsing, crappy blog links, card footers
+            <del>
+              Improve styling (markdown parsing, crappy blog links, card footers
+            </del>
             etc)
           </li>
+          <li>favicon</li>
           <li>Complete SEO and PWA config</li>
           <li>Test with Lighthouse</li>
           <li>Add GA and commenting?</li>

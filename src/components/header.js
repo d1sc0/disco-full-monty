@@ -17,13 +17,18 @@ const HeadNav = ({ siteTitle }) => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-              <Link className="nav-link" to="/">
+              <Link activeClassName="active" className="nav-link" to="/">
                 Home
               </Link>
-              <Link className="nav-link" to="/blog/">
+              <Link
+                activeClassName="active"
+                partiallyActive={true}
+                className="nav-link"
+                to="/blog/"
+              >
                 Blog
               </Link>
-              <Link className="nav-link" to="/about/">
+              <Link activeClassName="active" className="nav-link" to="/about/">
                 About
               </Link>
               <a href="https://google.com" className="nav-link">

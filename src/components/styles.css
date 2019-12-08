@@ -71,10 +71,19 @@ footer {
 }
 
 .card-footer {
-  background-color: none;
+  background-color: #ffffff;
   border-top: none;
 }
 
 .row.blogPage {
   flex-wrap: wrap-reverse;
+}
+
+a:hover {
+  color: #1b0064;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
 }
