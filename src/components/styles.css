@@ -63,7 +63,9 @@ footer {
   border-radius: 0.25rem !important;
 }
 
-.refforduotone {
-  border-top-color: #a5d8f3;
-  border-bottom-color: #e8e500;
+.prev-link {
+  margin-right: 2rem;
+}
+.next-link {
+  margin-left: 2rem;
 }

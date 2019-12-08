@@ -22,16 +22,18 @@ const PostTemplate = ({ data }) => {
 
       <div className="container py-5">
         <div className="row">
-          <div className="col-sm-6">
-            <h1>{postTitle}</h1>
-            <h6>Posted: {postDate}</h6>
+          <h1>{postTitle}</h1>
+          <h6>Posted: {postDate}</h6>
+        </div>
+        <div className="row">
+          <div className="col-md-6">
             <div
               dangerouslySetInnerHTML={{
                 __html: html,
               }}
             />
           </div>
-          <div className="col-sm-6">
+          <div className="col-md-6">
             <Image
               fluid={postImage}
               objectFit="cover"
@@ -58,7 +60,7 @@ export const query = graphql`
         }
       }
       images {
-        fluid (maxWidth: 800) {
+        fluid(maxWidth: 800) {
           ...GatsbyContentfulFluid_tracedSVG
         }
       }
