@@ -51,12 +51,17 @@ const About = () => {
           <li>
             <del>Sort out on Git, CD and test webhooks</del>
           </li>
-          <li>Add pagination on blogs</li>
+          <li>
+            <del>Add pagination on blogs></del>
+          </li>
+          <li>
+            Improve styling (markdown parsing, crappy blog links, card footers
+            etc)
+          </li>
           <li>Complete SEO and PWA config</li>
-          <li>Improve styling (crappy blog links, card footers etc)</li>
           <li>Test with Lighthouse</li>
           <li>Add GA and commenting?</li>
-          <li>updating Starter</li>
+          <li>update to use as a Starter</li>
         </ul>
       </div>
     </Layout>
