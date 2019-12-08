@@ -10,9 +10,9 @@ const Foot = ({ siteTitle, siteAuthor }) => {
           <Link to="/#top">Back to top</Link>
         </p>
         <p>
-          {siteTitle} - {siteAuthor} 2019.
+          {siteTitle} - 2019.
           <br />
-          <Link to="/">Read more about {siteAuthor}</Link>
+          <a href="https://github.com/d1sc0/">An experiment by {siteAuthor}</a>
         </p>
       </div>
     </footer>

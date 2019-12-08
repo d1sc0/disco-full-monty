@@ -60,7 +60,9 @@ const About = () => {
             </del>
             etc)
           </li>
-          <li>favicon</li>
+          <li>
+            <del>faviocon</del>
+          </li>
           <li>Complete SEO and PWA config</li>
           <li>Test with Lighthouse</li>
           <li>Add GA and commenting?</li>
