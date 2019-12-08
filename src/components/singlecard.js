@@ -4,12 +4,12 @@ import { Card } from 'react-bootstrap'
 import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
-const singleCard = ({ post }) => {
+const singleCard = ({ post, colSet }) => {
   const postImage = post.images[0].fluid
   return (
     <>
       {/* start of card */}
-      <div className="col-md-4 card-group">
+      <div className={`${colSet} card-group`}>
         <Card className="card mb-4 box-shadow">
           <Image
             fluid={postImage}

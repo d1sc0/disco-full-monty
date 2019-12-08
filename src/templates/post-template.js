@@ -21,19 +21,21 @@ const PostTemplate = ({ data }) => {
       <SEO title={`${postTitle}`} />
 
       <div className="container py-5">
-        <div className="row">
+        <div className="col-12 row">
           <h1>{postTitle}</h1>
+        </div>
+        <div className="col-12 row">
           <h6>Posted: {postDate}</h6>
         </div>
-        <div className="row">
-          <div className="col-md-6">
+        <div className="row blogPage">
+          <div className="col-md-6 pb-3">
             <div
               dangerouslySetInnerHTML={{
                 __html: html,
               }}
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 pb-3">
             <Image
               fluid={postImage}
               objectFit="cover"

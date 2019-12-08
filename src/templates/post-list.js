@@ -14,7 +14,7 @@ const BlogPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <CardSet postData={data.posts.edges} />
+      <CardSet postData={data.posts.edges} colSetup="col-md-6" />
       <div className="container text-center">
         {!isFirst && (
           <Link to={`/blog/${prevPage}`} rel="prev" classname="prev-link">

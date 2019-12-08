@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
         jumboData={jbdata}
         jumboImage={data.fluid1.childImageSharp.fluid}
       />
-      <CardSet postData={data.posts.edges} />
+      <CardSet postData={data.posts.edges} colSetup="col-md-4" />
       <div className="container text-center">
         <Link to="/blog/" className="btn btn-info my-2 w-50">
           Read more posts...
@@ -51,7 +51,7 @@ export const data = graphql`
             postExcerpt
           }
           images {
-            fluid(maxWidth: 450){
+            fluid(maxWidth: 450) {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }

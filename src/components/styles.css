@@ -69,3 +69,12 @@ footer {
 .next-link {
   margin-left: 2rem;
 }
+
+.card-footer {
+  background-color: none;
+  border-top: none;
+}
+
+.row.blogPage {
+  flex-wrap: wrap-reverse;
+}

@@ -3,13 +3,13 @@ import React from 'react'
 //import { Link } from 'gatsby'
 import SingleCard from './singlecard'
 
-const cardSet = ({ postData }) => {
+const cardSet = ({ postData, colSetup }) => {
   return (
     <section className="blog-posts">
       <div className="container">
         <div className="row">
           {postData.map(({ post }) => {
-            return <SingleCard key={post.id} post={post} />
+            return <SingleCard key={post.id} post={post} colSet={colSetup} />
           })}
         </div>
       </div>
