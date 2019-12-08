@@ -11,7 +11,7 @@ const getImages = graphql`
     ) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -45,8 +45,12 @@ const About = () => {
           <li>
             <del>Explore gatsby-background-image plugin (package added)</del>
           </li>
-          <li><del>Stand up on Nelify</del></li>
-          <li><del>Sort out on Git, CD and test webhooks</del></li>
+          <li>
+            <del>Stand up on Nelify</del>
+          </li>
+          <li>
+            <del>Sort out on Git, CD and test webhooks</del>
+          </li>
           <li>Add pagination on blogs</li>
           <li>Complete SEO and PWA config</li>
           <li>Improve styling (crappy blog links, card footers etc)</li>
