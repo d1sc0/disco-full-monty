@@ -49,7 +49,7 @@ export const data = graphql`
             postExcerpt
           }
           images {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 450) {
               ...GatsbyContentfulFluid
             }
           }
