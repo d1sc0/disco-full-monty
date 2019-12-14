@@ -25,6 +25,7 @@ const PostTemplate = ({ data }) => {
         title={`${postTitle}`}
         image={`${postImage.src}`}
         description={`${excerpt}`}
+        article="true"
       />
 
       <div className="container py-5">
