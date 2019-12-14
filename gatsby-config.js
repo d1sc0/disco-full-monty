@@ -5,8 +5,12 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `The Full Monty`,
+    titleTemplate: '%s - The Full Monty',
     description: `A simple dog-tastic Gatsby starter containing some simple bootsrap components - ready to be used with Contentful.`,
-    author: `d1sc0`,
+    author: `Stuart Mackenzie`,
+    url: `https://disco-full-monty.netlify.com`, // No trailing slash allowed!
+    image: '/images/dog-icon.jpg', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@_disco',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

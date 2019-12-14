@@ -22,7 +22,11 @@ const About = () => {
   const data = useStaticQuery(getImages)
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO
+        title="About"
+        image="/images/dog-astronaut.jpg"
+        description="Learn all about the fabulous Monty!"
+      />
       <div className="container py-5">
         <h1>About The Full Monty</h1>
         <Image
@@ -61,10 +65,17 @@ const About = () => {
             etc)
           </li>
           <li>
-            <del>faviocon</del>
+            <del>favicon</del>
           </li>
-          <li>Complete SEO and PWA config</li>
-          <li>Test with Lighthouse</li>
+          <li>
+            <del>PWA config</del>
+          </li>
+          <li>
+            <del>Look at SEO config</del>
+          </li>
+          <li>
+            <del>Test with Lighthouse</del>
+          </li>
           <li>Add GA and commenting?</li>
           <li>update to use as a Starter</li>
         </ul>

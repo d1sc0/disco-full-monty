@@ -10,6 +10,9 @@ const PostTemplate = ({ data }) => {
     postTitle,
     postDate,
     images,
+    postExcerpt: {
+      childMarkdownRemark: { excerpt },
+    },
     postBody: {
       childMarkdownRemark: { html },
     },
@@ -18,7 +21,11 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={`${postTitle}`} />
+      <SEO
+        title={`${postTitle}`}
+        image={`${postImage.src}`}
+        description={`${excerpt}`}
+      />
 
       <div className="container py-5">
         <div className="col-12 row">
@@ -56,6 +63,11 @@ export const query = graphql`
       postTitle
       postDate(formatString: "DD MMMM YYYY")
       slug
+      postExcerpt {
+        childMarkdownRemark {
+          excerpt
+        }
+      }
       postBody {
         childMarkdownRemark {
           html
