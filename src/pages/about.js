@@ -79,7 +79,14 @@ const About = () => {
           <li>
             <del>sort excerpting and twitter cards</del>
           </li>
-          <li>Add GA and commenting?</li>
+          <li>
+            <del>
+              change content model to single image per post and update queries
+            </del>
+          </li>
+          <li>Add Google Analytics</li>
+          <li>Consider adding commenting</li>
+          <li>Consider adding categories/tagging</li>
           <li>update to use as a Starter</li>
         </ul>
       </div>
