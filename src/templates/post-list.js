@@ -15,7 +15,7 @@ const BlogPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Blog" image={pageImage} blogIndex="true" />
+      <SEO title="Blog" image={pageImage} blogIndex={true} />
       <CardSet postData={data.posts.edges} colSetup="col-md-6" />
       <div className="container text-center">
         {!isFirst && (
