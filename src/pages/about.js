@@ -76,6 +76,9 @@ const About = () => {
           <li>
             <del>Test with Lighthouse</del>
           </li>
+          <li>
+            <del>sort excerpting and twitter cards</del>
+          </li>
           <li>Add GA and commenting?</li>
           <li>update to use as a Starter</li>
         </ul>
