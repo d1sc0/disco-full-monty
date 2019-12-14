@@ -19,7 +19,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
           titleTemplate,
           defaultDescription,
           siteUrl,
-          defaultImage,
           twitterUsername,
         },
       },
@@ -27,9 +26,18 @@ const SEO = ({ title, description, image, pathname, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: image || `${siteUrl}${defaultImage}`,
+        image: image,
         url: `${siteUrl}${pathname || '/'}`,
       }
+
+      if (article) {
+        //if article then image will be contentful and just need protocol
+        seo.image = 'https:' + image
+      } else {
+        //it's a page and we'll need to be prefixed with siteURL
+        seo.image = siteUrl + image
+      }
+
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
@@ -82,7 +90,6 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        defaultImage: image
         twitterUsername
       }
     }

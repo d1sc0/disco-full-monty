@@ -18,7 +18,7 @@ const PostTemplate = ({ data }) => {
     },
   } = data.blogPost
   const postImage = images[0].fluid
-
+  console.log(postImage)
   return (
     <Layout>
       <SEO

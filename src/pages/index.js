@@ -9,7 +9,7 @@ import { Link } from 'gatsby'
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" image={data.fluid1.childImageSharp.fluid.src} />
       <JumboB
         jumboData={jbdata}
         jumboImage={data.fluid1.childImageSharp.fluid}

@@ -9,7 +9,6 @@ module.exports = {
     description: `A simple dog-tastic Gatsby starter containing some simple bootsrap components - ready to be used with Contentful.`,
     author: `Stuart Mackenzie`,
     url: `https://disco-full-monty.netlify.com`, // No trailing slash allowed!
-    image: '/images/dog-icon.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@_disco',
   },
   plugins: [
