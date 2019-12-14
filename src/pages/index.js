@@ -9,7 +9,7 @@ import { Link } from 'gatsby'
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" image={data.fluid1.childImageSharp.fluid.src} />
+      <SEO title="Home" image={data.fluid1.childImageSharp.fixed.src} />
       <JumboB
         jumboData={jbdata}
         jumboImage={data.fluid1.childImageSharp.fluid}
@@ -64,6 +64,9 @@ export const data = graphql`
       relativePath: { eq: "jamie-street-MoDcnVRN5JU-unsplash.jpg" }
     ) {
       childImageSharp {
+        fixed(width: 500) {
+          ...GatsbyImageSharpFixed
+        }
         fluid(duotone: { highlight: "#282828", shadow: "#080808" }) {
           ...GatsbyImageSharpFluid
         }
