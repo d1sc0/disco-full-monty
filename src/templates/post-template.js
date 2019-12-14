@@ -10,7 +10,7 @@ const PostTemplate = ({ data }) => {
     postTitle,
     postDate,
     images,
-    postExcerpt: {
+    postBody: {
       childMarkdownRemark: { excerpt },
     },
     postBody: {
@@ -18,13 +18,13 @@ const PostTemplate = ({ data }) => {
     },
   } = data.blogPost
   const postImage = images[0].fluid
-  console.log(postImage)
+
   return (
     <Layout>
       <SEO
-        title={`${postTitle}`}
-        image={`${postImage.src}`}
-        description={`${excerpt}`}
+        title={postTitle}
+        image={postImage.src}
+        description={excerpt}
         article="true"
       />
 
@@ -64,14 +64,10 @@ export const query = graphql`
       postTitle
       postDate(formatString: "DD MMMM YYYY")
       slug
-      postExcerpt {
-        childMarkdownRemark {
-          excerpt
-        }
-      }
       postBody {
         childMarkdownRemark {
           html
+          excerpt(pruneLength: 140, format: PLAIN)
         }
       }
       images {

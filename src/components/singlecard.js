@@ -25,7 +25,7 @@ const singleCard = ({ post, colSet }) => {
               </small>
             </Card.Title>
             <Card.Text className="postexcerpt">
-              {post.postExcerpt.postExcerpt}
+              {post.postBody.childMarkdownRemark.excerpt}
             </Card.Text>
           </Card.Body>
           <Card.Footer>

@@ -9,7 +9,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-const SEO = ({ title, description, image, pathname, article }) => (
+const SEO = ({ title, description, image, pathname, blogIndex, article }) => (
   <StaticQuery
     query={query}
     render={({
@@ -30,7 +30,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
         url: `${siteUrl}${pathname || '/'}`,
       }
 
-      if (article) {
+      if (article || blogIndex) {
         //if article then image will be contentful and just need protocol
         seo.image = 'https:' + image
       } else {

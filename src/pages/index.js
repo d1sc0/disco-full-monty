@@ -47,8 +47,10 @@ export const data = graphql`
           slug
           postTitle
           postDate(formatString: "DD MMMM YYYY")
-          postExcerpt {
-            postExcerpt
+          postBody {
+            childMarkdownRemark {
+              excerpt(pruneLength: 140, format: PLAIN)
+            }
           }
           images {
             fluid(maxWidth: 450) {

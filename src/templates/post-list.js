@@ -11,9 +11,11 @@ const BlogPage = ({ data, pageContext }) => {
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
+  const pageImage = data.posts.edges[0].post.images[0].fluid.src
+
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Blog" image={pageImage} blogIndex="true" />
       <CardSet postData={data.posts.edges} colSetup="col-md-6" />
       <div className="container text-center">
         {!isFirst && (
@@ -53,8 +55,10 @@ export const data = graphql`
           slug
           postTitle
           postDate(formatString: "DD MMMM YYYY")
-          postExcerpt {
-            postExcerpt
+          postBody {
+            childMarkdownRemark {
+              excerpt(pruneLength: 140, format: PLAIN)
+            }
           }
           images {
             fluid(maxWidth: 450) {
