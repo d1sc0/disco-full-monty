@@ -22,7 +22,11 @@ const About = () => {
   const data = useStaticQuery(getImages)
   return (
     <Layout>
-      <SEO title="About" description="Learn all about the fabulous Monty!" image={data.fluid1.childImageSharp.fluid.src} />
+      <SEO
+        title="About"
+        description="Learn all about the fabulous Monty!"
+        image={data.fluid1.childImageSharp.fluid.src}
+      />
       <div className="container py-5">
         <h1>About The Full Monty</h1>
         <Image
