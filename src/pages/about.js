@@ -87,10 +87,10 @@ const About = () => {
           <li>Add Google Analytics</li>
           <li>create a simple form page</li>
           <li>add search?</li>
+          <li>update README</li>
           <li>Consider adding commenting</li>
           <li>Consider adding categories/tagging</li>
           <li>play with adding pages to content model - or micro content?</li>
-          <li>update to use as a Starter</li>
         </ul>
       </div>
     </Layout>
