@@ -5,14 +5,14 @@ import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 const singleCard = ({ post, colSet }) => {
-  const postImage = post.images[0].fluid
+  const cardImage = post.postImage.fluid
   return (
     <>
       {/* start of card */}
       <div className={`${colSet} card-group`}>
         <Card className="card mb-4 box-shadow">
           <Image
-            fluid={postImage}
+            fluid={cardImage}
             objectFit="cover"
             className="mb-0 img-fluid card-img-top"
             alt=""

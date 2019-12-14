@@ -52,7 +52,7 @@ export const data = graphql`
               excerpt(pruneLength: 140, format: PLAIN)
             }
           }
-          images {
+          postImage {
             fluid(maxWidth: 450) {
               ...GatsbyContentfulFluid_tracedSVG
             }

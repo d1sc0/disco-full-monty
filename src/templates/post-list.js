@@ -11,7 +11,7 @@ const BlogPage = ({ data, pageContext }) => {
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
-  const pageImage = data.posts.edges[0].post.images[0].fluid.src
+  const pageImage = data.posts.edges[0].post.postImage.fluid.src
 
   return (
     <Layout>
@@ -60,7 +60,7 @@ export const data = graphql`
               excerpt(pruneLength: 140, format: PLAIN)
             }
           }
-          images {
+          postImage {
             fluid(maxWidth: 450) {
               ...GatsbyContentfulFluid
             }

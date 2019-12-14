@@ -9,7 +9,7 @@ const PostTemplate = ({ data }) => {
   const {
     postTitle,
     postDate,
-    images,
+    postImage,
     postBody: {
       childMarkdownRemark: { excerpt },
     },
@@ -17,13 +17,13 @@ const PostTemplate = ({ data }) => {
       childMarkdownRemark: { html },
     },
   } = data.blogPost
-  const postImage = images[0].fluid
+  const twitterCardImage = postImage.fluid.src
 
   return (
     <Layout>
       <SEO
         title={postTitle}
-        image={postImage.src}
+        image={twitterCardImage}
         description={excerpt}
         article={true}
       />
@@ -70,7 +70,7 @@ export const query = graphql`
           excerpt(pruneLength: 140, format: PLAIN)
         }
       }
-      images {
+      postImage {
         fluid(maxWidth: 800) {
           ...GatsbyContentfulFluid
         }
