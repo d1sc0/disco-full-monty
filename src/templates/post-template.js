@@ -17,6 +17,7 @@ const PostTemplate = ({ data }) => {
       childMarkdownRemark: { html },
     },
   } = data.blogPost
+  const inPostImage = postImage.fluid
   const twitterCardImage = postImage.fluid.src
 
   return (
@@ -45,7 +46,7 @@ const PostTemplate = ({ data }) => {
           </div>
           <div className="col-md-6 pb-3">
             <Image
-              fluid={postImage}
+              fluid={inPostImage}
               objectFit="cover"
               className="mb-0 img-fluid post-img-main rounded"
               alt=""
