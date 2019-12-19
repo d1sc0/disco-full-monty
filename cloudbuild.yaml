@@ -6,7 +6,7 @@ steps:
     entrypoint: npm
     args: ['install', 'firebase-tools']
   - name: node:10.15.1
-    entrypoint: gatsby
+    entrypoint: npm
     args: ['build']
     env:
       [
