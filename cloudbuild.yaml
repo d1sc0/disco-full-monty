@@ -1,18 +1,15 @@
 steps:
-  - name: node:10.15.1
-    entrypoint: npm
+  - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
-  - name: node:10.15.1
-    entrypoint: npm
+  - name: 'gcr.io/cloud-builders/npm'
     args: ['install', 'firebase-tools']
-  - name: node:10.15.1
-    entrypoint: npm
+  - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
     env:
       [
         'CONTENTFUL_ID=${_CONTENTFUL_ID}',
         'CONTENTFUL_ACCESS_TOKEN=${_CONTENTFUL_ACCESS_TOKEN}',
       ]
-  - name: 'node:10.15.1'
+  - name: 'gcr.io/cloud-builders/npm'
     entrypoint: './node_modules/.bin/firebase'
     args: ['deploy', '--project', '$PROJECT_ID', '--token', '$_FIREBASE_TOKEN']
