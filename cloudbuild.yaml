@@ -14,6 +14,6 @@ steps:
         'CONTENTFUL_ACCESS_TOKEN=${_CONTENTFUL_ACCESS_TOKEN}',
       ]
   #deploy the resulting public directory to firebase
-  - name: 'gcr.io/cloud-builders/npm'
+  - name: 'node:10.15.1'
     entrypoint: './node_modules/.bin/firebase'
     args: ['deploy', '--project', '$PROJECT_ID', '--token', '$_FIREBASE_TOKEN']
