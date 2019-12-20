@@ -31,4 +31,4 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - deploy:
           path: ./public
-          command: now --token $CIRCLE_ZEIT --name disco-full-monty
+          command: now --prod --token $CIRCLE_ZEIT --name disco-full-monty
