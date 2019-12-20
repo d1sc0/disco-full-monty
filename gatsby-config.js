@@ -8,7 +8,7 @@ module.exports = {
     titleTemplate: '%s - The Full Monty',
     description: `A simple dog-tastic Gatsby starter containing some simple bootsrap components - ready to be used with Contentful.`,
     author: `Stuart Mackenzie`,
-    url: `https://disco-full-monty.netlify.com`, // No trailing slash allowed!
+    url: `https://disco-full-monty.now.sh`, // No trailing slash allowed!
     twitterUsername: '@_disco',
   },
   plugins: [
