@@ -84,6 +84,9 @@ const About = () => {
               change content model to single image per post and update queries
             </del>
           </li>
+          <li>
+            <del>Setup circleCI and Zeit Now - Hosting on renewables</del>
+          </li>
           <li>Add Google Analytics</li>
           <li>create a simple form page</li>
           <li>add search?</li>
