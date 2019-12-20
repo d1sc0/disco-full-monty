@@ -26,3 +26,9 @@ jobs:
       - run:
           name: Gatsby Build
           command: npm run build
+      - run:
+          name: Install Now CLI
+          command: sudo npm install --global --unsafe-perm now
+      - deploy:
+          path: ./public
+          command: now --token $CIRCLE_ZEIT --name disco-full-monty
