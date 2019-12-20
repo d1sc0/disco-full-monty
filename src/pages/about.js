@@ -85,7 +85,7 @@ const About = () => {
             </del>
           </li>
           <li>
-            <del>Setup circleCI and Zeit Now - Hosting on renewables</del>
+            <del>Setup circleCI and Zeit Now - Sustainable Hosting</del>
           </li>
           <li>Add Google Analytics</li>
           <li>create a simple form page</li>
