@@ -30,5 +30,6 @@ jobs:
           name: Install Now CLI
           command: sudo npm install --global --unsafe-perm now
       - deploy:
+          name: Deploy to Zeit Now
           path: ./public
           command: now --prod --token $CIRCLE_ZEIT --name disco-full-monty
